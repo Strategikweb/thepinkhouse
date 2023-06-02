@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Pink House - Appartment rental in Estoril</title>
+    <meta name="description" content="Enjoy an unforgettable vacation at The Pink House, 10 minutes walking distance from the beach in Estoril." />
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="Content/animate.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link type="text/css" rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)" href="Content/iphone.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape)" href="Content/iphone_landscape.css" />
+    <link type="text/css" rel="stylesheet" media="screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait)" href="Content/ipad.css" />
+    <link type="text/css" rel="stylesheet" media="only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation: landscape)" href="Content/ipad_landscape.css" />
+</head>
+
+<body>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" data-bs-scroll="true" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">The Pink House</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" tabindex="-1"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#AboutTheHouse">About the House</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#MeetYourHost">Meet your host</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Amenities">Amenities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#TakeATour">Take a tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Photographs">Photographs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#InTheArea">In the area</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#ThingsToDo">Things to do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Testimonies">Testimonies</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- fixed position trigger always visible -->
+                <button class="btn btn-outline-primary position-fixed" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNav" role="button" id="btnTrigger" aria-controls="offcanvasNav" title="View menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12 px-0">
+
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 animated fadeInLeftBig text-center pb-5">
+                                <img src="Content/img/the_pink_house_estoril.png" title="The Pink House, Estoril" id="ThePinkHouseEstoril" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid animated fadeInLeftBig p-0 mb-0" id="ThePinkHouse">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/img/the_pink_house_estoril.jpg"
+                                     srcset="Content/img/the_pink_house_estoril-small.jpg 480w, Content/img/the_pink_house_estoril.jpg 1080w" sizes="50vw"
+                                     class="d-block w-100" title="The Pink House in Estoril" alt="The Pink House in Estoril">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/img/the_pink_house_flowers.jpg"
+                                     srcset="Content/img/the_pink_house_flowers-small.jpg 480w, Content/img/the_pink_house_flowers.jpg 1080w" sizes="50vw"
+                                     class="d-block w-100" title="The Pink House in Estoril" alt="The Pink House in Estoril">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/img/the_pink_house_guincho.jpg"
+                                     srcset="Content/img/the_pink_house_guincho-small.jpg 480w, Content/img/the_pink_house_guincho.jpg 1080w" sizes="50vw"
+                                     class="d-block w-100" title="The Pink House in Estoril" alt="The Pink House in Estoril">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/img/the_pink_house_pasteis_de_nata.jpg"
+                                     srcset="Content/img/the_pink_house_pasteis_de_nata-small.jpg 480w, Content/img/the_pink_house_pasteis_de_nata.jpg 1080w" sizes="50vw"
+                                     class="d-block w-100" title="The Pink House in Estoril" alt="The Pink House in Estoril">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid pink py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-7 animated fadeInRightBig">
+                                <a id="AboutTheHouse" name="AboutTheHouse"></a>
+                                <h2>
+                                    About the House
+                                </h2>
+                                <p class="lead">
+                                    Enjoy an unforgettable vacation in our studio, 10 minutes walking distance from the beach.
+                                </p>
+                                <p>
+                                    Wake up hearing the birds chirping in this quiet residential area of Estoril and enjoy the beautiful sunset from inside the studio or from your private garden.
+                                </p>
+                                <p>
+                                    Estoril is near Lisbon, Cascais and Sintra, all within half-an-hour of your door. Enjoy sightseeing, visit museums or relax in your private garden surrounded by nature.
+                                </p>
+                                <p>
+                                    If you are a sports person, Estoril offers you various sports, including water sports on our beautiful beaches, tennis, golf, horse-riding and so much more.
+                                </p>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-12 col-sm-12 col-md-5 col-lg-4 animated fadeInLeftBig">
+                                <div class="card" id="InBrief">
+                                    <div class="card-body">
+                                        <h2 class="card-title pb-0">In brief</h2>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item ps-0">Location: <strong class="ms-1">Estoril</strong></li>
+                                            <li class="list-group-item ps-0">N° of guests: <strong class="ms-1">2</strong></li>
+                                            <li class="list-group-item ps-0">Bedrooms: <strong class="ms-1">1</strong></li>
+                                            <li class="list-group-item ps-0">Bathrooms: <strong class="ms-1">1</strong></li>
+                                            <li class="list-group-item ps-0">Kitchen: <strong class="ms-1">1</strong></li>
+                                            <li class="list-group-item ps-0">Garden: <strong class="ms-1">Yes</strong></li>
+                                            <li class="list-group-item ps-0">Check-in: <strong class="ms-1">From 4pm</strong></li>
+                                            <li class="list-group-item ps-0">Check-out: <strong class="ms-1">11am or earlier</strong></li>
+                                            <li class="list-group-item ps-0">Pets allowed: <strong class="ms-1">Yes</strong></li>
+                                            <li class="list-group-item ps-0">Quiet time: <strong class="ms-1">From 10pm to 8am</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a id="MeetYourHost" name="MeetYourHost"></a>
+                <div class="container-fluid">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 animated fadeInLeftBig">
+                                <img src="Content/img/the_pink_house_teresa_jorge.jpg" class="img-fluid rounded-circle mb-5 mb-sm-0 mb-md-0 mb-lg-0" title="Teresa Jorge - The Pink House in Estoril" alt="Teresa Jorge - The Pink House in Estoril" />
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-sm-7 col-md-7 col-lg-7 animated fadeInRightBig">
+                                <h2>Meet your host</h2>
+                                <p>
+                                    Dear Guest,
+                                </p>
+                                <p>
+                                    Welcome to the Pink House - Estoril. I am very happy to have you!
+                                </p>
+                                <p>
+                                    Enjoy the tranquility of this newly renovated 55 sq. mt. studio, near the beach, with its private sunny garden. Centrally located and with easy access to Lisbon, Cascais and Sintra, this residential neighbourhood is extremely safe, friendly, and within walking distance of the beach, cafés and restaurants.
+                                </p>
+                                <p>
+                                    This cosy studio is the perfect relaxing getaway or the tranquil space for remote working. In your private garden you will find deck chairs, a smalltable and loungers - just lay back and relax.
+                                </p>
+                                <p>
+                                    I hope you enjoy my place.
+                                </p>
+                                <p>
+                                    Have a great stay!
+                                </p>
+                                <p>
+                                    <img src="Content/img/teresa_jorge.png" title="Teresa Jorge - The Pink House in Estoril" alt="Teresa Jorge - The Pink House in Estoril" class="mt-2 mt-sm-2 mt-md-2 mt-lg-5" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a id="Amenities" name="Amenities"></a>
+                <div class="container-fluid light-grey animated fadeInLeftBig">
+                    <div class="container py-5">
+                        <div class="row reveal">
+                            <div class="col-12 col-sm-7 col-md-7 col-lg-7">
+                                <h2>Amenities</h2>
+                                <p>
+                                    <strong>Items Currently Available:</strong>
+                                </p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item ps-0">Hair dryer</li>
+                                    <li class="list-group-item ps-0">Bathroom toiletries: shampoo and body wash</li>
+                                    <li class="list-group-item ps-0">Bath towels and hand towels</li>
+                                    <li class="list-group-item ps-0">Beach towels</li>
+                                    <li class="list-group-item ps-0">Iron</li>
+                                    <li class="list-group-item ps-0">Washer</li>
+                                    <li class="list-group-item ps-0">Coffee Maker</li>
+                                    <li class="list-group-item ps-0">Toaster</li>
+                                    <li class="list-group-item ps-0">Stick blender with mincer</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                <img src="Content/img/the_pink_house_amenities.jpg" class="img-fluid upImg" title="The Pink House provides a variety of householditems for you to use during your stay" alt="The Pink House provides a variety of householditems for you to use during your stay" />
+                                <p class="mt-3 text-end caption">We provide a variety of householditems for you to use during your stay. Should you need additional itemsplease check with us for availability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid animated fadeInLeftBig p-0 mb-5">
+                    <img src="Content/img/the_pink_house_garden.jpg"
+                         srcset="Content/img/the_pink_house_garden-small.jpg 480w, Content/img/the_pink_house_garden.jpg 1080w" sizes="50vw"
+                         class="reveal img-fluid w-100" title="The Pink House in Estoril" alt="The Pink House in Estoril">
+                </div>
+
+                <a name="TakeATour"></a>
+                <div class="container animated fadeInRightBig" id="TakeATour">
+                    <div class="row reveal">
+                        <div class="col-12 text-center text-lg-left">
+                            <h2>Take a tour</h2>
+                        </div>
+                    </div>
+                    <div class="row reveal">
+                        <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                            <hr />
+                            <h3>Bedroom</h3>
+                            <img src="Content/img/the_pink_house_bedroom.jpg" class="card-img-top img-fluid rounded-circle p-4" title="The Pink House - Bedroom" alt="The Pink House - Bedroom" />
+                            <div class="card-body p-0 pt-lg-5">
+                                <p class="card-text">
+                                    2 Queen size beds or 1 XL King size bed. Whichever you choose, you’ll sleep in extra soft 100% cotton bed linen, have a choice of pillows and extra blankets.
+                                </p>
+                                <p class="card-text">
+                                    Wardrobe with hangers and drawers for clothes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                            <hr />
+                            <h3>Living room</h3>
+                            <img src="Content/img/the_pink_house_livingroom.jpg" class="card-img-top img-fluid rounded-circle p-4" title="The Pink House - Living room" alt="The Pink House - Living room" />
+                            <div class="card-body p-0 pt-lg-5">
+                                <p class="card-text">
+                                    Sunny and peaceful, just what you need to relax and unwind. Here, you’ll find books, table games and a working area.
+                                </p>
+                                <p class="card-text">
+                                    In case you need to work online, we offer 5G  Internet - 300Mbps.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                            <hr />
+                            <h3>Kitchen</h3>
+                            <img src="Content/img/the_pink_house_kitchen.jpg" class="card-img-top img-fluid rounded-circle p-4" title="The Pink House - Kitchen" alt="The Pink House - Kitchen" />
+                            <div class="card-body p-0 pt-lg-5">
+                                <p class="card-text">
+                                    Fitted with all major appliances: oven and cooker, fridge, clothes washing machine and microwave.
+                                </p>
+                                <p class="card-text">
+                                    Small appliances: Nespresso machine, electric kettle, toaster, stick blender and mincer.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                            <hr />
+                            <h3>Bathroom</h3>
+                            <img src="Content/img/the_pink_house_bathroom.jpg" class="card-img-top img-fluid rounded-circle p-4" title="The Pink House - Bathroom" alt="The Pink House - Bathroom" />
+                            <div class="card-body p-0 pt-lg-5">
+                                <p class="card-text">
+                                    Shower, shampoo, bodywash, 100% cotton towels and hairdryer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a name="Photographs"></a>
+                <div class="container-fluid light-grey my-5 py-5">
+                    <div class="photo-gallery">
+                        <div class="container reveal">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Photo gallery</h2>
+                                </div>
+                            </div>
+                            <!-- Desktop -->
+                            <div class="row photos">
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox1_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox1_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox2_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox2_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox3_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox3_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox4_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox4_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox5_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox5_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox6_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox6_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox7_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox7_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox8_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox8_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox9_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox9_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox10_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox10_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox11_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox11_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox12_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox12_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox13_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox13_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox14_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox14_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox15_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox15_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox16_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox16_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox17_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox17_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                                <div class="col-sm-4 col-md-4 col-lg-2 item"><a href="Content/img/lightbox/lightbox18_big.jpg" data-lightbox="photos"><img class="img-fluid" src="Content/img/lightbox/lightbox18_small.jpg" alt="The Pink House, Estoril" title="The Pink House, Estoril"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a name="InTheArea"></a>
+                <div class="container-fluid mb-5" id="InTheArea">
+                    <div class="container reveal">
+                        <div class="row">
+                            <div class="col-12 text-center text-lg-left">
+                                <h2>In the area</h2>
+                            </div>
+                        </div>
+                        <div class="row reveal">
+                            <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                                <hr />
+                                <h3>
+                                    <span class="text-muted small">2 km</span><br />
+                                    Poça
+                                </h3>
+                                <img src="Content/img/the_pink_house_poça_beach.jpg" class="card-img-top img-fluid rounded-circle p-4" title="Poça - EEC Blue Flag" alt="Poça - EEC Blue Flag" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Nearest beach</h4>
+                                    <p class="card-text">
+
+                                        Enclosed between two coastal cliffs, Poça Beach is the nearest beach to the Studio.
+                                        Poça Beach has good points of access from the Marginal coast road and a pedestrian tunnel that goes under the train tracks.
+                                        Offers a promenade, life-guard, showers, toilets, bars and restaurants with ocean view.
+                                    </p>
+                                    <p>
+                                        <img src="Content/img/eec_blue_flag.png" class="blue_flag" title="EEC Blue Flag" alt="EEC Blue Flag" /> <span class="text-muted stylised ms-2">EEC Blue Flag</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                                <hr />
+                                <h3>
+                                    <span class="text-muted small">2.7 km</span><br />
+                                    Tamariz
+                                </h3>
+                                <img src="Content/img/the_pink_house_tamariz_beach.jpg" class="card-img-top img-fluid rounded-circle p-4" title="Tamariz - EEC Blue Flag" alt="Tamariz - EEC Blue Flag">
+                                <div class="card-body">
+                                    <h4 class="card-title">Central location</h4>
+                                    <p class="card-text">
+                                        Tamariz Beach is one of the most popular beaches given its central location and the close proximity of the railway station.
+                                        Tamariz Beach has a complete range of services and facilities including an Atlantic saltwater swimming pool,
+                                        promenade, showers, toilets, bars and restaurants with ocean view.
+                                    </p>
+                                    <p>
+                                        <img src="Content/img/eec_blue_flag.png" class="blue_flag" title="EEC Blue Flag" alt="EEC Blue Flag" /> <span class="text-muted stylised ms-2">EEC Blue Flag</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                                <hr />
+                                <h3>
+                                    <span class="text-muted small">9 km</span><br />
+                                    Carcavelos
+                                </h3>
+                                <img src="Content/img/the_pink_house_carcavelos_beach.jpg" class="card-img-top img-fluid rounded-circle p-4" title="Tamariz - EEC Blue Flag" alt="Tamariz - EEC Blue Flag">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sport paradise</h4>
+                                    <p class="card-text">
+                                        Carcavelos Beach is the largest expanse of sand on the Estoril coast and regularly hosts beach volleyball and football competitions.
+                                        Given its easy access, Carcavelos Beach is highly popular during the summer while in winter it is mostly used for surfing and bodyboarding.
+                                        Carcavelos offers a wide choice of restaurants and bars.
+                                    </p>
+                                    <p>
+                                        <img src="Content/img/eec_blue_flag.png" class="blue_flag" title="EEC Blue Flag" alt="EEC Blue Flag" /> <span class="text-muted stylised ms-2">EEC Blue Flag</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card text-center no-border col-12 col-sm-6 col-md-6 col-lg-3">
+                                <hr />
+                                <h3>
+                                    <span class="text-muted small">12 km</span><br />
+                                    Guincho
+                                </h3>
+                                <img src="Content/img/the_pink_house_guincho_beach.jpg" class="card-img-top img-fluid rounded-circle p-4" title="Guincho - EEC Blue Flag" alt="Guincho - EEC Blue Flag">
+                                <div class="card-body">
+                                    <h4 class="card-title">Wind and waves</h4>
+                                    <p class="card-text">
+                                        Part of the Sintra-Cascais Natural Park, Guincho Beach is endowed with a surrounding landscape of great beauty.
+                                        Given both its strong winds and waves, Guincho attracts bodyboarders and surfers.
+                                        Nearby, there are some excellent restaurants specialising in fish and shellfish dishes.
+                                    </p>
+                                    <p>
+                                        <img src="Content/img/eec_blue_flag.png" class="blue_flag" title="EEC Blue Flag" alt="EEC Blue Flag" /> <span class="text-muted stylised ms-2">EEC Blue Flag</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a name="ThingsToDo"></a>
+                <div class="container-fluid light-grey py-5">
+                    <div class="container reveal">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Things to do</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+                                <div class="card">
+                                    <img src="Content/img/the_pink_house_cascais.jpg" class="card-img-top" title="The Pink House, near Cascais" alt="The Pink House, near Cascais">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Cascais</h4>
+                                        <p class="card-text">
+                                            Cascais is a very lively and cosmopolitan town.
+                                            Particularly recommended is a stroll through its streets, where you'll find nice shops, or enjoy the many outdoor cafés and restaurants scattered around town.
+                                            Other than the beautiful beaches, visit the Forte, Marina and the Museums in the centre of the town.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+                                <div class="card mt-4 mt-sm-0 mt-md-0 mt-lg-0">
+                                    <img src="Content/img/the_pink_house_lisbon.jpg" class="card-img-top" title="The Pink House, near Lisbon" alt="The Pink House, near Lisbon">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lisbon</h4>
+                                        <p class="card-text">
+                                            Standing on the estuary of the River Tejo, the city has a long history dating back to the Romans.
+                                            Lisbon offers a combination of old-world history, a great climate and safety.
+                                            I strongly suggest you take a tuk tuk tour to help you manage Lisbon's seven hills and its paved steep streets.
+                                            Must see places: Castelo São Jorge, Alfama, Mosteiro dos Jerónimos, Torre de Belém, Terreiro do Paço and Cais das Colunas, Chiado and Bairro Alto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-sm-5 mt-md-0 mt-lg-0 col-sm-12 col-lg-4 d-flex align-items-stretch">
+                                <div class="card mt-4 mt-sm-0 mt-md-0 mt-lg-0">
+                                    <img src="Content/img/the_pink_house_sintra.jpg" class="card-img-top" title="The Pink House, near Sintra" alt="The Pink House, near Sintra">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sintra</h4>
+                                        <p class="card-text">
+                                            Hidden among a majestic forest, whimsical palaces, extravagant villas and the ruins of a 10th-century Moorish castle, Sintra is a swirl of fairy-tale styles, combining exotic and local architecture with beautiful views.
+                                            The summer destination of choice for the nobility and bourgeoisie since the 15th century, Sintra's hills are filled with remarkable monuments and parks, including the National Palace of Sintra.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid animated fadeInLeftBig p-0">
+                    <img src="Content/img/the_pink_house_flowers.jpg"
+                         srcset="Content/img/the_pink_house_flowers-small.jpg 480w, Content/img/the_pink_house_flowers.jpg 1080w" sizes="50vw"
+                         class="reveal img-fluid w-100" title="Contact the Pink House owner" alt="Contact the Pink House owner">
+                </div>
+
+
+                <a name="Contact"></a>
+                <div class="container reveal py-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Contact your host</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <form action="https://formsubmit.co/mteresajorge@sapo.pt" method="POST" target="_blank">
+                                <input type="email" name="email" placeholder="Enter your email" required>
+                                <input type="text" name="name" placeholder="Enter your name" required>
+                                <textarea name="message" rows="5"></textarea>
+                                <br />
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 pt-5 pt-sm-5 pt-md-5 pt-lg-0">
+                            <p>
+                                Avenida da Holanda, 386<br />
+                                2765-228 Estoril<br />
+                                PORTUGAL
+                            </p>
+                            <p>
+                                <a href="tel:351-91-90-90-560">(+351) 91 90 90 560</a><br />
+                                <a href="https://thepinkhouseestoril.com">Website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid light">                    
+                    <a name="Testimonies"></a>
+                    <div class="container reveal py-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Testimonies</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                <img src="Content/img/the_pink_house.jpg" title="The Pink House, Estoril" class="img-fluid" style="width:100%" />
+                            </div>
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1">
+                                <span class="quote">"</span>
+                            </div>
+                            <div class="col-11 col-sm-11 col-md-11 col-lg-5 pt-5 pt-sm-5 pt-md-5 pt-lg-0 testimonies">
+                                <p class="pt-lg-5 ps-sm-5 ps-md-5 testimony">
+                                    Nullam a tincidunt augue. Morbi mattis ipsum sit amet felis iaculis, eu mattis velit finibus. Suspendisse tellus leo, aliquet at dignissim at, suscipit fringilla arcu. Ut ut risus posuere ligula lacinia malesuada et at tortor. Morbi sit amet nibh vitae nisl congue sollicitudin. Nunc quis scelerisque ipsum.
+                                </p>
+                                <p class="author ps-sm-5 ps-md-5">
+                                    Lorem Ipsum - Guest in 2023
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+
+                <footer>
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Quick Links</h4>
+                                    <a href="#MeetYourHost" title="Meet your host">Meet your host</a><br />
+                                    <a href="#Amenities" title="Amenities">Amenities</a><br />
+                                    <a href="#TakeATour" title="Take a tour">Take a tour</a><br />
+                                    <a href="#Photographs" title="Photo gallery">Photo gallery</a><br />
+                                    <a href="#InTheArea" title="In the area">In the area</a><br />
+                                    <a href="#ThingsToDo" title="Things to do">Things to do</a><br />
+                                    <a href="#ContactDetails" title="Contact your house">Contact your host</a><br />
+                                    <a href="#Testimonies" title="Testimonies">Testimonies</a>
+                                </div>
+                                <div class="col-6 text-md-end text-lg-end">
+                                    &copy; 2023 - All rights reserved<br /><br />
+                                    <span class="small">
+                                        Website designed and developed by<br /><a href="https://strategikweb.fr" target="_blank" title="Visit Strategikweb website" rel="noreferrer">strategikweb.fr</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="Scripts/App/scrollAnimation.js"></script>
+    <script src="Scripts/App/ScrollToTop.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <script>
+        $("#nav-item a").click(function () {
+            $('.offcanvas').offcanvas('hide');
+        });
+    </script>
+
+
+</body>
+</html>
