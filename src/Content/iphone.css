@@ -36,12 +36,21 @@ p.caption {
 }
 
 
+.rounded-circle {
+    width:80%;
+    height:80%;
+    margin:1em auto;
+}
 
 
 .offcanvas {
     background: #c49eb8;
     color: #FFF;
-    padding: 0 1em 0 0
+    padding: 0;    
+}
+
+.offcanvas, .offcanvas.show {
+    width: 60%
 }
 
 .offcanvas-header {
@@ -51,24 +60,25 @@ p.caption {
 
 
 .offcanvas h5, .offcanvas a {
-    color: #FFF
+    color: #FFF;
+    line-height:1em
 }
 
-    .offcanvas a:hover, .offcanvas a:visited {
-        color: #EAEAEA
-    }
+.offcanvas a:hover, .offcanvas a:visited {
+    color: #EAEAEA
+}
 
 .offcanvas-body {
     padding-top: 0
 }
 
-    .offcanvas-body ul li.nav-item {
-        border-top: 1px solid #eaeaea
-    }
+.offcanvas-body ul li.nav-item {
+    border-top: 1px solid #eaeaea
+}
 
-        .offcanvas-body ul li.nav-item:first-child {
-            border-top: none
-        }
+.offcanvas-body ul li.nav-item:first-child {
+    border-top: none
+}
 
 .offcanvas .dropdown-menu.show {
     background: #d1677b;
@@ -105,4 +115,25 @@ p.caption {
 
 .btn-close {
     font-family: 'Special Elite', cursive;
+}
+
+p.testimony {
+    font-size: 1.1em;
+}
+
+input[type="submit"], input[type="button"], button {
+    color:#000;
+    font-size: 1em;
+}
+
+footer {
+    font-size: 0.8em
+}
+
+#Left {
+    text-align:left
+}
+
+#Right {
+    text-align: right
 }
