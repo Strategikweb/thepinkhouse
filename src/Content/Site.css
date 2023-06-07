@@ -112,6 +112,10 @@ h5 a:link, h5 a:visited, h5 a:active {
     font-size:1em
 }
 
+p.card-title {
+    font-size: 1.1em
+}
+
 /* main layout
 ----------------------------------------------------------*/
 .content-wrapper {
