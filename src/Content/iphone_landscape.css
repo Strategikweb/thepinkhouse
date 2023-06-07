@@ -32,6 +32,10 @@ img.blue_flag {
     margin: 1em auto 2em
 }
 
+input[type="submit"], input[type="button"], button {
+    color: #000;
+}
+
 p.caption {
     text-align: center !important;
     font-style: italic;
