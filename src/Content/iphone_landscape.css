@@ -58,3 +58,12 @@ p.caption {
 .bi.bi-list {
     font-size: 1em
 }
+
+
+
+
+/* Photo gallery */
+.example-image {
+    width: 18%;
+    padding: 0 0.2em 0.7em 0
+}

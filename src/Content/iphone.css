@@ -137,3 +137,14 @@ footer {
 #Right {
     text-align: right
 }
+
+
+
+
+
+
+/* Photo gallery */
+.example-image {
+    width: 30%;
+    padding: 0 0.2em 0.8em 0
+}
