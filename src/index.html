@@ -153,7 +153,10 @@
                                 </p>
                                 <p>
                                     If you are a sports person, Estoril offers you various sports, including water sports on our beautiful beaches, tennis, golf, horse-riding and so much more.
-                                </p>
+                                </p>                                
+                                <a href="https://airbnb.com/h/thepinkhouseestoril" class="p-0 m-0" rel="noreferrer" target="_blank" title="Book your stay at The Pink House - Estoril on Airbnb">
+                                    <img src="Content/img/the_pink_house_airbnb.png" class="changeOpacity mt-3 p-0 m-0" title="Book your stay at The Pink House - Estoril on Airbnb" alt="Book your stay at The Pink House - Estoril on Airbnb" />
+                                </a>                                
                             </div>
                             <div class="col-sm-1 col-md-1 col-lg-1"></div>
                             <div class="col-12 col-sm-12 col-md-5 col-lg-4 animated fadeInLeftBig">
@@ -505,7 +508,7 @@
 
 
                 <a name="Contact"></a>
-                <div class="container reveal py-5">
+                <div class="container reveal py-5" id="Contact">
                     <div class="row">
                         <div class="col-12">
                             <h2>Contact your host</h2>
@@ -536,7 +539,10 @@
                             </p>
                             <p>
                                 <a href="tel:351-91-90-90-560">(+351) 91 90 90 560</a><br />
-                                <a href="https://thepinkhouseestoril.com">Website</a>
+                                <a href="https://thepinkhouseestoril.com">Website</a><br />
+                                <a href="https://airbnb.com/h/thepinkhouseestoril" class="p-0 m-0" rel="noreferrer" target="_blank" title="Book your stay at The Pink House - Estoril on Airbnb">
+                                    <img src="Content/img/the_pink_house_airbnb.png" class="changeOpacity mt-3 p-0 m-0" title="Book your stay at The Pink House - Estoril on Airbnb" alt="Book your stay at The Pink House - Estoril on Airbnb" />
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -558,14 +564,31 @@
                                 <span class="quote ps-sm-5 ps-md-5">"</span>
                             </div>
                             <div class="col-11 col-sm-11 col-md-11 col-lg-5 pt-5 pt-sm-5 pt-md-5 pt-lg-0 testimonies">
-                                <p class="pt-lg-5 ps-sm-5 ps-md-5 testimony">
-                                    Very kind host. House also perfect for a long stay or for smartworking. Very close to the center of Estoril, tastefully furnished and equipped with all needs, both in the kitchen and in the bedroom.
-                                    <br />Thanks, Teresa!
-                                </p>
-                                <p class="author ps-sm-5 ps-md-5">
-                                    Emilio M. - Italy<br />
-                                    <em>Guest in 2023</em>
-                                </p>
+
+                                <section id="testimonials">
+                                    <div class="cust-quotes">
+                                        <blockquote data-timeout="3600">
+                                            <p class="pt-lg-5 ps-sm-5 ps-md-5 testimony">
+                                                Very kind host. House also perfect for a long stay or for smartworking. Very close to the center of Estoril, tastefully furnished and equipped with all needs, both in the kitchen and in the bedroom.
+                                                <br />Thanks, Teresa!
+                                            </p>
+                                            <p class="author ps-sm-5 ps-md-5">
+                                                E. Martano - Italy<br />
+                                                <em>Guest in 2023</em>
+                                            </p>
+                                        </blockquote>
+                                        <blockquote data-timeout="3600">
+                                            <p class="pt-lg-5 ps-sm-5 ps-md-5 testimony">
+                                                Extremely clean, comfortable and with all facilities.<br />
+                                                Highly recommend it, very good.
+                                            </p>
+                                            <p class="author ps-sm-5 ps-md-5">
+                                                H. Monteggia - Italy<br />
+                                                <em>Guest in 2023</em>
+                                            </p>
+                                        </blockquote>
+                                    </div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -588,6 +611,9 @@
                                     <a href="#Testimonies" title="Testimonies">Testimonies</a>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-md-end text-lg-end" id="Right">
+                                    <a href="https://airbnb.com/h/thepinkhouseestoril" class="p-0 m-0" rel="noreferrer" target="_blank" title="Book your stay at The Pink House - Estoril on Airbnb">
+                                        <img src="Content/img/the_pink_house_airbnb.png" class="changeOpacity p-0 m-0" title="Book your stay at The Pink House - Estoril on Airbnb" alt="Book your stay at The Pink House - Estoril on Airbnb" />
+                                    </a><br />
                                     &copy; 2023<br />All rights reserved<br /><br />
                                     Website designed and developed by<br /><strong><a href="https://strategikweb.fr" target="_blank" title="Visit Strategik Web website" rel="noreferrer">strategikweb.fr</a></strong>
                                 </div>
@@ -610,9 +636,26 @@
         $("#nav-item a").click(function () {
             $('.offcanvas').offcanvas('hide');
         });
+
+        function initQuoteCarousel() {
+            var $quotesWrapper = $(".cust-quotes");
+            var $quotes = $quotesWrapper.find("blockquote");
+            if (!$quotes.length) {
+                return;
+            }
+            var selectNextQuote = function () {
+                // keep move first quote in dom to the end to make continous
+                var $quote = $quotesWrapper.find("blockquote:first").detach().appendTo($quotesWrapper);
+
+                setTimeout(selectNextQuote, $quote.data("timeout"));
+            };
+            setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
+        }
+
+        $(function () {
+            initQuoteCarousel();
+        });
     </script>
-
-
 
 
 </body>
